@@ -4,7 +4,7 @@
 ## **Architecture** 
 
 <p align="center">
-  <img width="500" height="400" src="C:\Users\talla\Downloads\YT_ELT\images\project_architecture .png">
+  <img width="500" height="400" src="images/project_architecture.png">
 </p>
 
 ## **Motivation** 
