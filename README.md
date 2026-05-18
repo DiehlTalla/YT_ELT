@@ -79,8 +79,3 @@ Both unit and data quality testing are implemented in this project using pystest
 
 The CI-CD part of this project is needed for when you make a change the Airflow code, docker image, packages, etc and want to test that the DAGs are still working as expected. CI-CD is implemented using Github Actions.
 
-## **License**
-
-This project is proprietary and intended for educational use only. Enrolled students may use this code for personal learning purposes. Redistribution, resale, or public sharing of this code is not permitted. See [LICENSE](LICENSE) for full details.
-
-The `docker-compose.yaml` file is derived from the [Apache Airflow](https://airflow.apache.org/) project and is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [NOTICE](NOTICE) for attribution details.
