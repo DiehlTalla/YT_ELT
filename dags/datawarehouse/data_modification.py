@@ -13,7 +13,7 @@ def insert_rows(cur,conn,schema,row):
 
             cur.execute(
                 f"""INSERT INTO {schema}.{table}("Video_ID, "Video_Title", "Upload_Date", "Duration", "Video_Views", "Likes_count", "Comments_Count" )
-                VALUES (%(video_id)s, %(title)s, ù(publishedAt)s, %(duration)s, %(viewCount)s, %(likeCount)s, %(commentCount)s, ;
+                VALUES (%(video_id)s, %(title)s, %(publishedAt)s, %(duration)s, %(viewCount)s, %(likeCount)s, %(commentCount)s, ;
                 """, row
             )
 
@@ -23,7 +23,7 @@ def insert_rows(cur,conn,schema,row):
 
             cur.execute(
                 f"""INSERT INTO {schema}.{table}("Video_ID, "Video_Title", "Upload_Date", "Duration", "Video_Views", "Likes_count", "Comments_Count" )
-                VALUES (%(video_id)s, %(title)s, ù(publishedAt)s, %(duration)s, %(viewCount)s, %(likeCount)s, %(commentCount)s, ;
+                VALUES (%(video_id)s, %(title)s, %(publishedAt)s, %(duration)s, %(viewCount)s, %(likeCount)s, %(commentCount)s, ;
                 """, row
             )
 
@@ -77,7 +77,7 @@ def update_rows(cur,conn,schema,row):
         logger.error(f"error inserting row with Video_ID: {row[video_id]}") 
         raise e 
 
-def delete_row(cur, conn, schema, ids_to_delete):
+def delete_rows(cur, conn, schema, ids_to_delete):
     try:
 
         ids_to_delete = f"""({', '.join(f"'{id}'" for id in ids_to_delete)})"""
